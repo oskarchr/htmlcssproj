@@ -1,0 +1,152 @@
+//Hur referera till olika stylesheets ifall man skulle dela upp det? Typ få in global i alla
+
+//GLOBAL
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    padding-left: 10rem;
+}
+
+.current-page {
+    background-color: rgba(0, 0, 0, 0.103);
+    font-weight: 700;
+}
+
+.container__line {
+    margin: 0 2rem 0 2rem;
+    background-color: rgba(0, 0, 0, 0.281);
+    height: 1px;
+    border-width: 0;
+}
+
+//HOME
+.header {
+
+    &__main-title {
+        position: absolute;
+        left: 20%;
+        top: 20%;
+        right: auto;
+        background-color: white;
+    }
+    &__image {
+        object-fit: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        max-height: 35vh;
+        width: 100%;
+
+    }
+    &__navbar {
+        position: fixed;
+        background-color: white;
+        border-right: 1px solid black;
+        height: 100%;
+        width: 10rem;
+    }
+    &__list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        &-item {
+            
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.26);
+            }
+
+            & a {
+                padding: 1.5em 1em;
+                display: block;
+                text-decoration: none;
+                color: black;
+            }
+            
+        }
+    }
+    
+}
+
+.card__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 3rem;  
+}
+.card {
+    background-color: beige;
+    width: 30vw;
+    box-shadow: 2px 3px 5px black;
+    &__image {
+        max-height: 22rem;
+        width: 100%;
+        object-fit: cover;   
+    }
+    &__details {
+        padding: 1rem;
+    }
+    &__description {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        
+        
+    }
+}
+
+//DETAILS-PAGE
+
+.event__details {
+    & p {
+        padding: 1rem;
+    }
+    &__image-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        padding: 2rem;
+    }
+    &__image {
+        transition: .2s ease-in-out;
+        &:hover {
+        transform: scale(1.1);
+        }
+    }
+}
+
+//FORM-PAGE
+
+
+.form__container {
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: 3rem;
+    padding-top: 3rem;
+
+    & label {
+        display: inline-block;
+        width: 10rem;
+    }
+    & input {
+        width: 10rem;
+        box-sizing: border-box;
+    }
+    /*& #img {
+        background-color: red;
+    }
+    */
+    & #description {
+        vertical-align: top;
+        width: 10rem;
+        box-sizing: border-box; //text-area blev inte samma bredd som input fälten, detta löste problemet (räknade inte med inbybyggda border)
+    }
+}
+
+
+

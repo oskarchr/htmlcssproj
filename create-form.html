@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Website - Create Event</title>
+</head>
+<body>
+    <header class="header">
+        
+        <nav class="header__navbar">
+            <ul class="header__list">
+                <li class="header__list-item"><a href="./index.html">Home</a></li>
+                <li class="header__list-item"><a href="./all-events.html">All Events</a></li>
+                <li class="header__list-item"><a href="./create-form.html" class="current-page">Create Event</a></li>
+                <li class="header__list-item"><a href="./about-us.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <form class="container form__container">
+        <h1>Create Event</h1>
+        <div>
+            <label for="title">Event title</label>
+            <input type="text" id="title" name="event-title" placeholder="Type a title...">
+        </div>
+        <div>
+            <label for="description">Description</label>
+            <textarea name="event-description" id="description" rows="5"></textarea>
+        </div>
+        <div>
+            <label for="price">Price</label>
+            <input type="number" id="price" name="event-price" placeholder="Price">
+        </div>
+        <div>
+            <label for="img">Images</label>
+            <input type="file" id="img" name="img" accept="image/*">
+            <input type="file" id="img" name="img" accept="image/*"> <!-- flera av samma id????? -->
+            <input type="file" id="img" name="img" accept="image/*">
+            <input type="file" id="img" name="img" accept="image/*">
+        </div>
+        <div>
+            <input type="submit">
+        </div>
+        Allt som står på korten och detailspage
+
+    </form>
+   
+</body>
+</html>
