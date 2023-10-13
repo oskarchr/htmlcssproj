@@ -20,6 +20,9 @@
   border-width: 0;
 }
 
+.header {
+  background-color: #f3eae7;
+}
 .header__main-title {
   position: absolute;
   left: 15rem;
