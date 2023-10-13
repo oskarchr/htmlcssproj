@@ -17,23 +17,46 @@
             </ul>
         </nav>
     </header>
-    <div class="container">
-        <div>
+    <div class="about-us container">
+        <section class="about-us__info">
             <h1>About Us</h1>
             <p>Info företag</p>
             <h2>Rubrik 2</h2>
             <p>Info om team</p>
             <h2>Rubrik 2</h2>
             <p>Info om VD</p>
-        </div>
-        <div>
-            <img class="" src="https://picsum.photos/200/200" alt="VD-img">
-            <p>VD Namn</p>
-            <p>Telefonnummer interaktiv</p>
-            <p>Email interaktiv</p>
-        </div>
+        </section>
+        <section class="about-us__contact-info">
+            <img class="about-us__contact-info-CEO-picture" src="https://picsum.photos/150/150" alt="VD-img">
+            <div class="about-us__contact-info-text">
+                <p>VD Namn</p>
+                <p><a href="tel:+91123-456-7890">+46733192832</a></p>
+                <p><a href = "mailto:name@gmail.com">example@gmail.com</a></p>
+            </div>
+        </section>
+        <section class="about-us__team-picture">
+            <img class="" src="https://picsum.photos/800/200" alt="Team-img">
+        </section>
 
-
+        <div class="about-us__form__container">
+            <form class="about-us__form">
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="event-title" placeholder="Type your name...">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="event-price" placeholder="example@domain.com">
+                </div>
+                <div>
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" rows="4" placeholder="Write your message here..."></textarea>
+                </div>
+                <div class="submit-button">
+                    <button type="submit" id="submit-button">Submit</button>
+                </div>
+            </form>
+        </div>
     </div>
     
 </body>
