@@ -73,33 +73,36 @@
 .card {
   background-color: #dde3ee;
   color: #0d0807;
-  width: 25vw;
+  max-width: 25vw;
+  min-width: 25rem;
   box-shadow: 2px 3px 5px black;
 }
-@media screen and (max-width: 992px) {
-  .card {
-    width: 30vw;
-  }
-}
-@media screen and (max-width: 768px) {
-  .card {
-    width: 50vw;
-  }
-}
 .card__image {
-  max-height: 22rem;
+  height: 20rem;
   width: 100%;
   object-fit: cover;
 }
-.card__details {
+.card__details__container {
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.card__category {
+  margin-top: 0.5em;
+  font-size: 0.8rem;
+  font-style: italic;
+  color: #0d0807;
 }
 .card__description {
   margin-top: 1rem;
   margin-bottom: 0.5rem;
-  white-space: nowrap;
+  line-height: 1.5em;
   overflow: hidden;
   text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  height: 48px;
 }
 .card__price {
   color: #57a88e;
@@ -137,6 +140,9 @@
 }
 .event__details__image {
   transition: 0.2s ease-in-out;
+  height: 20rem;
+  width: 20rem;
+  object-fit: cover;
 }
 .event__details__image:hover {
   transform: scale(1.1);

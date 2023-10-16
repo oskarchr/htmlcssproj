@@ -6,6 +6,9 @@
 //även styling för forms, kan va samma på create event och about us?
 
 //kolla SEO, meta taggar, description osv. Checka alt attribut. Fixa favicon
+
+//Vad projekt mässigt bör du tänka på till nästa gång.
+//Kanske tänka mer på att sätta bra klassnamn osv från första början
 $background-color: #f3eae7;
 $text-color: #0d0807;
 $primary-color: #31565e;
@@ -116,29 +119,37 @@ $accent-color: #57a88e;
 .card {
     background-color: $secondary-color;
     color: $text-color;
-    width: 25vw;
+    max-width: 25vw; //så att det får plats max 3 cards
+    min-width: 25rem; //så att de inte blir hur små som helst
     box-shadow: 2px 3px 5px black;
-    @media screen and (max-width:992px) {
-        width: 30vw;
-    }
-    @media screen and (max-width:768px) {
-        width: 50vw;
-    }
 
     &__image {
-        max-height: 22rem;
+        height: 20rem;
         width: 100%;
         object-fit: cover;   
     }
-    &__details {
+    &__details__container {
+        //background-color: red;        fixa alignment när title blir 2 rader, kanske har fixat pga min-width på card
         padding: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+    &__category {
+        margin-top: 0.5em;
+        font-size: 0.8rem;
+        font-style: italic;
+        color: $text-color;
     }
     &__description {
         margin-top: 1rem;
         margin-bottom: 0.5rem;
-        white-space: nowrap;
+        line-height: 1.5em;
         overflow: hidden;
-        text-overflow: ellipsis;     
+        text-overflow: ellipsis;   
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        height: 48px;  
     }
     &__price {
         color: $accent-color;
@@ -172,6 +183,9 @@ $accent-color: #57a88e;
     }
     &__image {
         transition: .2s ease-in-out;
+        height: 20rem;
+        width: 20rem;
+        object-fit: cover;   
         &:hover {
         transform: scale(1.1);
         }
