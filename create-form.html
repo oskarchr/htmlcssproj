@@ -39,15 +39,26 @@
             </div>
             <div>
                 <label for="file-upload" class="create-event__upload-button">Add image</label>
-                <input type="file" id="img" name="img" accept="image/*">
+                <input type="file" id="file-upload" name="img" accept="image/*">
                 <label for="file-upload" class="create-event__upload-button">Add image</label>
-                <input type="file" id="img" name="img" accept="image/*"> <!-- flera av samma id????? -->
+                <input type="file" id="file-upload" name="img" accept="image/*"> <!-- flera av samma id????? Behöver samma id som "label for" för att det ska funka -->
                 <label for="file-upload" class="create-event__upload-button">Add image</label>
-                <input type="file" id="img" name="img" accept="image/*">
+                <input type="file" id="file-upload" name="img" accept="image/*">
                 <label for="file-upload" class="create-event__upload-button">Add image</label>
-                <input type="file" id="img" name="img" accept="image/*">
+                <input type="file" id="file-upload" name="img" accept="image/*">
             </div>      
         </div>
+        <div>
+            <label for="category">Category</label>
+            <select id="category" name="category">
+            <option value="" disabled selected>Select a category</option>
+            <option value="Adventure Water Sports">Adventure Water Sports</option>
+            <option value="Aerial Adventures">Aerial Adventures</option>
+            <option value="Outdoor Adventure Sports">Outdoor Adventure Sports</option>
+            <option value="Subterranean Adventures">Subterranean Adventures</option>
+            </select>
+        </div>
+
         <div>
             <button type="submit" class="create-event-submit-button">Submit</button>
         </div>
