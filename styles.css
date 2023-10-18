@@ -46,8 +46,8 @@ body {
 }
 .header__main-title__container {
   position: absolute;
-  left: 11rem;
-  top: 1rem;
+  left: 13rem;
+  top: 3rem;
   color: #F9FBF9;
   text-shadow: 1px 1px 10px black;
 }
@@ -213,6 +213,11 @@ body {
   margin-left: 1rem;
   max-width: 50vw;
 }
+@media screen and (max-width: 768px) {
+  .event__details {
+    max-width: 100vw;
+  }
+}
 .event__details p {
   margin-bottom: 1rem;
 }
@@ -224,11 +229,12 @@ body {
   flex-wrap: wrap;
   margin: 2rem;
   gap: 2rem;
+  padding-top: 0;
 }
 .event__details__image {
   transition: 0.2s ease-in-out;
-  height: 20rem;
-  width: 20rem;
+  height: 22rem;
+  width: 22rem;
   object-fit: cover;
 }
 .event__details__image:hover {
@@ -349,10 +355,17 @@ body {
   display: flex;
   gap: 1rem;
 }
-.about-us__team-picture img {
-  height: 15rem;
-  max-width: 60vw;
+.about-us__contact-info-CEO-picture {
   object-fit: cover;
+  height: 15rem;
+  width: 15rem;
+}
+.about-us__team-picture img {
+  max-height: 20rem;
+  width: 50vw;
+  min-width: 27.5rem;
+  object-fit: cover;
+  object-position: 0 20%;
   overflow: hidden;
 }
 .about-us__form {

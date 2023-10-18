@@ -26,7 +26,6 @@ $background-color: #F9FBF9;
 $text-color: #040703;
 $primary-color: #33482D;
 $secondary-color: #E4E8E3;
-//$accent-color: #3B9783;
 $accent-color: #3B8C7A;
 
 $background-color--dark: #040604;
@@ -101,8 +100,8 @@ body {
     background-color: $background-color;
     &__main-title__container {
         position: absolute;
-        left: 11rem;
-        top: 1rem;
+        left: 13rem;
+        top: 3rem;
         color: $background-color;
         text-shadow: 1px 1px 10px black;
         @media screen and (max-width:768px) {
@@ -257,6 +256,9 @@ body {
 .event__details {
     margin-left: 1rem;
     max-width: 50vw;
+    @media screen and (max-width:768px) {
+        max-width: 100vw;
+    }
     & p {
         margin-bottom: 1rem;
     }
@@ -268,12 +270,12 @@ body {
         flex-wrap: wrap;
         margin: 2rem;
         gap: 2rem;
-        //padding: 2rem;
+        padding-top: 0;
     }
     &__image {
         transition: .2s ease-in-out;
-        height: 20rem;
-        width: 20rem;
+        height: 22rem;
+        width: 22rem;
         object-fit: cover;   
         &:hover {
         transform: scale(1.1);
@@ -366,16 +368,22 @@ body {
         display: flex;
         gap: 1rem;
     }
+    &__contact-info-CEO-picture {
+        object-fit: cover;
+        height: 15rem;
+        width: 15rem;
+    }
     &__team-picture {
         
         & img {  
-            height: 15rem;
-            max-width: 60vw;
+            max-height: 20rem;
+            width: 50vw;
+            min-width: 27.5rem;
             object-fit: cover;
+            object-position: 0 20%;
             overflow: hidden;
             
         } 
-        
     }
     &__form {
         background-color: $secondary-color;
