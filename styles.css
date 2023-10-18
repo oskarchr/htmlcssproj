@@ -248,10 +248,6 @@ body {
   margin-left: 1rem;
   height: 100vh;
   color: #040703;
-  /*& #img {
-      background-color: red;
-  }
-  */
 }
 .create-event h1 {
   padding-top: 1rem;
@@ -373,6 +369,7 @@ body {
   display: flex;
   flex-direction: column;
   width: fit-content;
+  margin-bottom: 2rem;
   gap: 1rem;
   padding: 1rem;
   border: 1px solid rgba(0, 0, 0, 0.474);
