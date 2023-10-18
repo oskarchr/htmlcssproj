@@ -1,13 +1,3 @@
-/* $background-color: #f3eae7;
-$text-color: #0d0807;
-$primary-color: #31565e;
-$secondary-color: #dde3ee;
-$accent-color: #57a88e; */
-/* $background-color: #FAF5F5;
-$text-color: #070404;
-$primary-color: #4F9496;
-$secondary-color: #D7E0EA;
-$accent-color: #54A07D; */
 * {
   margin: 0px;
   padding: 0px;
@@ -185,7 +175,7 @@ body {
   text-decoration: none;
   background-color: #33482D;
   border: none;
-  color: #F9FCF8;
+  color: #F9FBF9;
   text-align: center;
   font-size: 1rem;
   border-radius: 2rem;
@@ -267,7 +257,7 @@ body {
   text-decoration: none;
   background-color: #33482D;
   border: none;
-  color: #F9FCF8;
+  color: #F9FBF9;
   text-align: center;
   font-size: 1rem;
   border-radius: 2rem;
@@ -312,7 +302,7 @@ body {
   text-decoration: none;
   background-color: #33482D;
   border: none;
-  color: #F9FCF8;
+  color: #F9FBF9;
   text-align: center;
   font-size: 1rem;
   border-radius: 2rem;
@@ -411,7 +401,7 @@ body {
   text-decoration: none;
   background-color: #33482D;
   border: none;
-  color: #F9FCF8;
+  color: #F9FBF9;
   text-align: center;
   font-size: 1rem;
   border-radius: 2rem;

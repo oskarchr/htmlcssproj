@@ -7,20 +7,12 @@
 //Typ att det inte gick att klicka på hela hoverbara ytan på navbar, behövde lägga padding på själva A taggen istället för li elementet.
 //Fixed navbar och left-margin. Satte en variabel på alla containers som gav padding på left side, sedan en media query som tog bort den när navbaren hamnade över istället (samt en padding-top istället).
 
+//något jag kanske skulle gjort, scalea ner storleken på allt när media queries kickar in
+
 
 //Vad projekt mässigt bör du tänka på till nästa gång.
 //Kanske tänka mer på att sätta bra klassnamn osv från första början
-/* $background-color: #f3eae7;
-$text-color: #0d0807;
-$primary-color: #31565e;
-$secondary-color: #dde3ee;
-$accent-color: #57a88e; */
 
-/* $background-color: #FAF5F5;
-$text-color: #070404;
-$primary-color: #4F9496;
-$secondary-color: #D7E0EA;
-$accent-color: #54A07D; */
 
 $background-color: #F9FBF9;
 $text-color: #040703;
@@ -28,19 +20,13 @@ $primary-color: #33482D;
 $secondary-color: #E4E8E3;
 $accent-color: #3B8C7A;
 
-$background-color--dark: #040604;
-$text-color--dark: #F9FCF8;
-$primary-color--dark: #BDD2B7;
-$secondary-color--dark: #181C17;
-$accent-color--dark: #68C4B1;
-
 $nav-left-padding-desktop: 10rem;
 
 @mixin button-style {
     text-decoration: none;
     background-color: $primary-color;
     border: none;
-    color: $text-color--dark;
+    color: $background-color;
     text-align: center;
     font-size: 1rem;
     border-radius: 2rem;
@@ -198,7 +184,6 @@ body {
         object-fit: cover;   
     }
     &__details__container {
-        //background-color: red;        fixa alignment när title blir 2 rader, kanske har fixat pga min-width på card
         padding: 1rem;
         display: flex;
         flex-direction: column;
