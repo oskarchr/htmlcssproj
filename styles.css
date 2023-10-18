@@ -11,7 +11,7 @@ $accent-color: #54A07D; */
 * {
   margin: 0px;
   padding: 0px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 body {
@@ -25,7 +25,7 @@ body {
 @media screen and (max-width: 768px) {
   .container {
     padding-left: unset;
-    padding-top: 4.15rem;
+    padding-top: 4.35rem;
   }
 }
 
@@ -104,7 +104,7 @@ body {
 }
 @media screen and (max-width: 768px) {
   .header__navbar {
-    height: 4.15rem;
+    height: 4.35rem;
     width: 100%;
     border-right: unset;
     border-bottom: 1px solid black;
@@ -128,7 +128,7 @@ body {
   padding: 1.5rem 1rem;
   display: block;
   text-decoration: none;
-  color: black;
+  color: #040703;
 }
 
 .card__container {
