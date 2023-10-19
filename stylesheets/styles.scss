@@ -1,8 +1,3 @@
-//Hur referera till olika stylesheets ifall man skulle dela upp det? Typ få in global i alla, antar att ha endast specifikt stylesheet för current page, samt referera till global på alla?
-
-
-//kolla SEO, meta taggar, description osv. Checka alt attribut. Fixa favicon
-
 //problem som påträffades?  
 //Typ att det inte gick att klicka på hela hoverbara ytan på navbar, behövde lägga padding på själva A taggen istället för li elementet.
 //Fixed navbar och left-margin. Satte en variabel på alla containers som gav padding på left side, sedan en media query som tog bort den när navbaren hamnade över istället (samt en padding-top istället).
