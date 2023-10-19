@@ -217,7 +217,7 @@ body {
         & a {
             display: block;
             text-decoration: none;
-            color: white;
+            color: $background-color;
             padding: 0.5rem 2rem;
         }
     }
@@ -251,8 +251,8 @@ body {
     }
     &__image {
         transition: .2s ease-in-out;
-        height: 22rem;
-        width: 22rem;
+        height: 16rem;
+        width: 16rem;
         object-fit: cover;   
         &:hover {
         transform: scale(1.1);

@@ -190,7 +190,7 @@ body {
 .card__button a {
   display: block;
   text-decoration: none;
-  color: white;
+  color: #F9FBF9;
   padding: 0.5rem 2rem;
 }
 
@@ -223,8 +223,8 @@ body {
 }
 .event__details__image {
   transition: 0.2s ease-in-out;
-  height: 22rem;
-  width: 22rem;
+  height: 16rem;
+  width: 16rem;
   object-fit: cover;
 }
 .event__details__image:hover {
