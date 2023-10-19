@@ -270,10 +270,10 @@ body {
         display: inline-block;
         width: 10rem;
     }
-    input[type="file"] {
+    & input[type="file"] {
         display: none;
     }
-    .img-upload {
+    & .img-upload {
         display: flex;
         gap: 0.5rem;
     }
@@ -288,15 +288,13 @@ body {
         width: 10rem;
         @include input-style;
     }
-    & textarea {
-        @include input-style;
-    }
     & #description {
+        @include input-style;
         vertical-align: top;
         width: 10rem;
         box-sizing: border-box; 
     }
-    & .create-event-submit-button {
+    &__submit-button {
         @include button-style;
     }
 }
@@ -360,17 +358,15 @@ body {
         width: 15rem;
         @include input-style;
     }
-    & textarea {
-        @include input-style;
-    }
     & #message {
+        @include input-style;
         vertical-align: top;
         width: 15rem;
         box-sizing: border-box;
     }
-    #submit-button {
-            float: right;
-            width: 15rem;
-            @include button-style;
+    & #submit-button {
+        float: right;
+        width: 15rem;
+        @include button-style;
     }
 }

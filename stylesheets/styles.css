@@ -283,22 +283,20 @@ body {
 .create-event input:not(#img):focus {
   outline: none;
 }
-.create-event textarea {
+.create-event #description {
   border: none;
   box-sizing: border-box;
   padding: 0.25rem;
   border-radius: 0.5rem;
   box-shadow: 0 0 4px 1px rgba(4, 7, 3, 0.568627451);
-}
-.create-event textarea:focus {
-  outline: none;
-}
-.create-event #description {
   vertical-align: top;
   width: 10rem;
   box-sizing: border-box;
 }
-.create-event .create-event-submit-button {
+.create-event #description:focus {
+  outline: none;
+}
+.create-event__submit-button {
   text-decoration: none;
   background-color: #33482D;
   border: none;
@@ -309,7 +307,7 @@ body {
   padding: 0.5rem 2rem;
   cursor: pointer;
 }
-.create-event .create-event-submit-button:hover {
+.create-event__submit-button:hover {
   background-color: #3e5737;
   border-radius: 2rem;
 }
@@ -380,20 +378,18 @@ body {
 .about-us input:focus {
   outline: none;
 }
-.about-us textarea {
+.about-us #message {
   border: none;
   box-sizing: border-box;
   padding: 0.25rem;
   border-radius: 0.5rem;
   box-shadow: 0 0 4px 1px rgba(4, 7, 3, 0.568627451);
-}
-.about-us textarea:focus {
-  outline: none;
-}
-.about-us #message {
   vertical-align: top;
   width: 15rem;
   box-sizing: border-box;
+}
+.about-us #message:focus {
+  outline: none;
 }
 .about-us #submit-button {
   float: right;
