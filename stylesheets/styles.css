@@ -296,6 +296,17 @@ body {
 .create-event #description:focus {
   outline: none;
 }
+.create-event #category {
+  border: none;
+  box-sizing: border-box;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 4px 1px rgba(4, 7, 3, 0.568627451);
+  width: 10rem;
+}
+.create-event #category:focus {
+  outline: none;
+}
 .create-event__submit-button {
   text-decoration: none;
   background-color: #33482D;
