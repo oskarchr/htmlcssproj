@@ -345,6 +345,7 @@ body {
   width: 15rem;
 }
 .about-us__team-picture img {
+  aspect-ratio: 6/2;
   max-height: 20rem;
   width: 50vw;
   min-width: 27.5rem;
