@@ -24,49 +24,51 @@
         </nav>
     </header>
     
-    <form class="create-event container">
-        <h1>Create Event</h1>
-        <div>
-            <label for="title">Event title</label>
-            <input type="text" id="title" name="event-title" placeholder="Type a title...">
-        </div>
-        <div>
-            <label for="description">Description</label>
-            <textarea name="event-description" id="description" rows="5" placeholder="Type a description..."></textarea>
-        </div>
-        <div>
-            <label for="price">Price</label>
-            <input type="number" id="price" name="event-price" placeholder="Price">
-        </div>
-        <div class="img-upload">
+    <main>
+        <form class="create-event container">
+            <h1>Create Event</h1>
             <div>
-                <label>Images</label>
+                <label for="title">Event title</label>
+                <input type="text" id="title" name="event-title" placeholder="Type a title...">
             </div>
             <div>
-                <label for="file-upload1" class="create-event__upload-button">Add image</label>
-                <input type="file" id="file-upload1" name="img" accept="image/*">
-                <label for="file-upload2" class="create-event__upload-button">Add image</label>
-                <input type="file" id="file-upload2" name="img" accept="image/*">
-                <label for="file-upload3" class="create-event__upload-button">Add image</label>
-                <input type="file" id="file-upload3" name="img" accept="image/*">
-                <label for="file-upload4" class="create-event__upload-button">Add image</label>
-                <input type="file" id="file-upload4" name="img" accept="image/*">
-            </div>      
-        </div>
-        <div>
-            <label for="category">Category</label>
-            <select id="category" name="category">
-            <option value="" disabled selected>Select a category</option>
-            <option value="Adventure Water Sports">Adventure Water Sports</option>
-            <option value="Aerial Adventures">Aerial Adventures</option>
-            <option value="Outdoor Adventure Sports">Outdoor Adventure Sports</option>
-            <option value="Subterranean Adventures">Subterranean Adventures</option>
-            </select>
-        </div>
-        <div>
-            <button type="submit" class="create-event__submit-button">Submit</button>
-        </div>
-        <hr class="container__line">
-    </form>
+                <label for="description">Description</label>
+                <textarea name="event-description" id="description" rows="5" placeholder="Type a description..."></textarea>
+            </div>
+            <div>
+                <label for="price">Price</label>
+                <input type="number" id="price" name="event-price" placeholder="Price">
+            </div>
+            <div class="img-upload">
+                <div>
+                    <label>Images</label>
+                </div>
+                <div>
+                    <label for="file-upload1" class="create-event__upload-button">Add image</label>
+                    <input type="file" id="file-upload1" name="img" accept="image/*">
+                    <label for="file-upload2" class="create-event__upload-button">Add image</label>
+                    <input type="file" id="file-upload2" name="img" accept="image/*">
+                    <label for="file-upload3" class="create-event__upload-button">Add image</label>
+                    <input type="file" id="file-upload3" name="img" accept="image/*">
+                    <label for="file-upload4" class="create-event__upload-button">Add image</label>
+                    <input type="file" id="file-upload4" name="img" accept="image/*">
+                </div>      
+            </div>
+            <div>
+                <label for="category">Category</label>
+                <select id="category" name="category">
+                <option value="" disabled selected>Select a category</option>
+                <option value="Adventure Water Sports">Adventure Water Sports</option>
+                <option value="Aerial Adventures">Aerial Adventures</option>
+                <option value="Outdoor Adventure Sports">Outdoor Adventure Sports</option>
+                <option value="Subterranean Adventures">Subterranean Adventures</option>
+                </select>
+            </div>
+            <div>
+                <button type="submit" class="create-event__submit-button">Submit</button>
+            </div>
+            <hr class="container__line">
+        </form>
+    </main>
 </body>
 </html>
