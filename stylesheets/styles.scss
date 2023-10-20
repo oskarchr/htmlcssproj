@@ -1,13 +1,4 @@
-//problem som påträffades?  
-//Typ att det inte gick att klicka på hela hoverbara ytan på navbar, behövde lägga padding på själva A taggen istället för li elementet.
-//Fixed navbar och left-margin. Satte en variabel på alla containers som gav padding på left side, sedan en media query som tog bort den när navbaren hamnade över istället (samt en padding-top istället).
-
-//något jag kanske skulle gjort, scalea ner storleken på allt när media queries kickar in
-
-
-//Vad projekt mässigt bör du tänka på till nästa gång.
-//Kanske tänka mer på att sätta bra klassnamn osv från första början
-
+//Variables and mixins
 
 $background-color: #F9FBF9;
 $text-color: #040703;
